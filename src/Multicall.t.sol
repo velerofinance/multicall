@@ -137,7 +137,7 @@ contract MulticallTest is DSTest, Multicall {
         uint256 difficulty = getCurrentBlockDifficulty();
         uint256 gaslimit = getCurrentBlockGasLimit();
         address coinbase = getCurrentBlockCoinbase();
-        uint256 balance = getEthBalance(address(this));
+        uint256 balance = getUsdvBalance(address(this));
 
         assertEq(blockHash, blockhash(510));
         assertEq(lastBlockHash, blockhash(block.number - 1));

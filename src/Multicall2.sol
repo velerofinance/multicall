@@ -46,7 +46,7 @@ contract Multicall2 {
     function getCurrentBlockTimestamp() public view returns (uint256 timestamp) {
         timestamp = block.timestamp;
     }
-    function getEthBalance(address addr) public view returns (uint256 balance) {
+    function getUsdvBalance(address addr) public view returns (uint256 balance) {
         balance = addr.balance;
     }
     function getLastBlockHash() public view returns (bytes32 blockHash) {
